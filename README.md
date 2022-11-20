@@ -1,2 +1,13 @@
-# mastodon-cdk-sst
-Deploy Mastodon instances using AWS CDK and SST
+# Mastodon CDK SST
+
+Deploy Mastodon instances using AWS CDK and Serverless Stack.
+
+## Quickstart
+
+Create a stage (e.g. `prod`) to deploy your instance by copying `.env` to `.env.prod`
+
+```shell
+npm i -g pnpm  # install pnpm globally
+pnpm i  # install dependencies
+pnpm exec sst deploy --stage prod
+```
